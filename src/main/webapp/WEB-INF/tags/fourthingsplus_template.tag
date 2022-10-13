@@ -4,15 +4,12 @@
 
 <%@attribute name="header" fragment="true" %>
 
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-        <jsp:invoke fragment="header"/>
-    </title>
+    <title><jsp:invoke fragment="header"/></title>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/css/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,8 +20,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.jsp">
-                <img src="${pageContext.request.contextPath}/images/fourthingsplus_logo.png" width="350px;"
-                     class="img-fluid"/>
+                <img src="${pageContext.request.contextPath}/images/fourthingsplus_logo.png" width="350px;" class="img-fluid"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +28,8 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 1</a>
-                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 2</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/about.jsp">About</a>
+                    <a class="nav-item nav-link" href="${pageContext.request.contextPath}/itemlist">Itemlist</a>
                     <a class="nav-item nav-link" href="${pageContext.request.contextPath}/">Page 3</a>
                     <c:if test="${sessionScope.user == null }">
                         <a class="nav-item nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
@@ -48,14 +44,7 @@
 </header>
 
 <div id="body" class="container mt-4" style="min-height: 400px;">
-    <h1>
-        <jsp:invoke fragment="header"/>
-    </h1>
     <jsp:doBody/>
-</div>
-
-
-
 </div>
 
 <!-- Bootstrap Bundle with Popper -->

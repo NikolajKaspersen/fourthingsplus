@@ -4,12 +4,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@page errorPage="error.jsp" isErrorPage="true" %>
 
-<t:pagetemplate>
+<t:fourthingsplus_template>
     <jsp:attribute name="header">
              Error page
     </jsp:attribute>
-
-
 
 
     <jsp:body>
@@ -39,4 +37,4 @@
             or try <a href="login.jsp">logging</a> in again.</p>
 
     </jsp:body>
-</t:pagetemplate>
+</t:fourthingsplus_template>

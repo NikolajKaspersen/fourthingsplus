@@ -5,15 +5,13 @@
 
 <t:fourthingsplus_template>
     <jsp:attribute name="header">
-         About four things plus
+        About fourthingsplus
     </jsp:attribute>
-
 
     <jsp:body>
 
-        <h3>About this website</h3>
-        <p>Dette website er lavet på 2.semester, efteråret 2022</p>
-
+        <h3>About fourthingsplus</h3>
+        <p>Velkommen til dette website. God fornøjelse.</p>
     </jsp:body>
 
 </t:fourthingsplus_template>

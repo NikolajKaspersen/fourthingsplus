@@ -5,9 +5,8 @@
 
 <t:fourthingsplus_template>
     <jsp:attribute name="header">
-         four things plus
+         Welcome to the frontpage
     </jsp:attribute>
-
 
     <jsp:body>
 
